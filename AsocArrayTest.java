@@ -27,6 +27,7 @@ public class AsocArrayTest {
 		assertEquals (sc.get("nombre"), "luis");
 	}
 	
+	
 	@Test(expected = UndefinedKeyException.class)
 	public void BuscarClaveEnTablaNoExistente (){
 		AsocArray sc = new AsocArray ("nombre","luis");
