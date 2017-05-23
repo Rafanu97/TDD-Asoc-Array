@@ -93,7 +93,22 @@ public class AsocArray extends Object{
         return nodo.valor;
     }
     
-    
+    public String getOrElse(String clave, String valorPorDefecto) {
+        String valor;
+        Nodo nodo = first;
+        
+        while (nodo != null && nodo.clave.compareTo(clave) != 0)
+          nodo = nodo.siguiente;
+        
+        
+        if (nodo == null)            
+            valor = valorPorDefecto;
+        else
+            valor = nodo.valor;
+        
+        return valor;
+    }
+
 
 	
 	
