@@ -86,8 +86,7 @@ public class AsocArray extends Object{
          while (nodo != null && nodo.clave.compareTo(clave) != 0)
            nodo = nodo.siguiente;
         
-        if (nodo == null)
-            throw new NoSuchElementException();
+      
         
         return nodo.valor;
     }

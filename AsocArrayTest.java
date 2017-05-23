@@ -21,4 +21,10 @@ public class AsocArrayTest {
 		assertEquals (sc.get("nombre"),null);
 	}
 	
+	@Test
+	public void BuscarClaveEnTabla (){
+		AsocArray sc = new AsocArray ("nombre","luis");
+		assertEquals (sc.get("nombre"), "luis");
+	}
+	
 }
