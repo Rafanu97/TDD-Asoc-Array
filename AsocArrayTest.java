@@ -34,4 +34,10 @@ public class AsocArrayTest {
 		assertEquals (sc.get("eh"), "luis");
 	}
 	
+	@Test
+	public void BuscarClave()  {
+		AsocArray sc = new AsocArray ("nombre","luis");
+		assertEquals (sc.getOrElse("hola", "valorPorDefecto2"),"valorPorDefecto2" );
+	}
+	
 }
