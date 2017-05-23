@@ -39,5 +39,16 @@ public class AsocArrayTest {
 		AsocArray sc = new AsocArray ("nombre","luis");
 		assertEquals (sc.getOrElse("hola", "valorPorDefecto2"),"valorPorDefecto2" );
 	}
+	@Test
+	public void existeClaveVerdadero (){
+		AsocArray sc = new AsocArray ("nombre","luis");
+		assertEquals (sc.containsKey("nombre"), true );
+	}
+	
+	@Test
+	public void existeClaveFalso() {
+		AsocArray sc = new AsocArray ("nombre","luis");
+		assertEquals (sc.containsKey("hola"), false );
+	}
 	
 }
