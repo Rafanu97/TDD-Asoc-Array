@@ -109,6 +109,21 @@ public class AsocArray extends Object{
         return valor;
     }
 
+    public boolean containsKey(String clave) {
+    	boolean res=true;
+    	Nodo nodo = first;
+        
+        while (nodo != null && nodo.clave.compareTo(clave) != 0){
+          nodo = nodo.siguiente;
+          
+    }
+        if (nodo == null){
+        	res=false;
+    
+}
+        return res;
+
+}
 
 	
 	
